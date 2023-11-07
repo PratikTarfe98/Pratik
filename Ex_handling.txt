@@ -1,0 +1,62 @@
+Name: Waghmare Akash Arun
+Roll No.:TE30
+Subject :FJP
+
+Title:Exception handling
+
+Write a JAVA program which use try Catch for Exception.  
+
+Code:
+
+package Exp_9;
+
+public class Exception_Handling {
+
+	public static void main(String[] args) {
+		try
+		{
+			int i=10/0;
+			System.out.println(i);
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Division by 0 >.<");
+		}
+		try
+		{
+			int a[]= new int[5];
+			System.out.println (a[6]);
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Invalid Index :0");
+		}
+		try
+		{
+			String str =null;
+			System.out.println(str.length());
+		}
+		catch(NullPointerException e)
+		{
+			System.out.println("\nString Empty("); 	
+		}
+		try
+		{
+			int j=Integer.parseInt("abc");
+			System.out.println("j");
+		}
+		catch(NumberFormatException e)
+		{
+			System.out.println("\nNumber cannot include Alphabets O_o");
+		}
+	}
+}
+
+Output :
+Division by 0 >.<
+Invalid Index :0
+
+String Empty(
+
+Number cannot include Alphabets O_o
+
